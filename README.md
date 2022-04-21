@@ -26,7 +26,7 @@ Omega_c = graphs[[1]]
 truth_delta=(Omega_d - Omega_c)
 ```
 
-We can then generate two sets of samples, `X_c` and `X_d``, each following a Gaussian Distribution with inverse covariance matrix as Omega_c` and `Omega_d ` respectively:
+We can then generate two sets of samples, `X_c` and `X_d`, each following a Gaussian Distribution with inverse covariance matrix as Omega_c` and `Omega_d ` respectively:
 
 ```{r}
 f <- function(m) class(try(solve(m),silent=T))=="matrix"
